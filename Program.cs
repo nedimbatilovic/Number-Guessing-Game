@@ -6,11 +6,11 @@
         {
             Random _Random = new Random();
             int Num = _Random.Next(1, 10);
-            int Guess = 0;
-            Console.Write("num: ");
+            int Guess = 0;         
 
             while (true)
             {
+                Console.Write("num: ");
                 Guess = Convert.ToInt32(Console.ReadLine());
                 if (Guess < Num)
                 {
@@ -23,7 +23,7 @@
                     Console.WriteLine("correct");
                     Console.Write("continue y/n: ");
                     string Choice = Console.ReadLine();
-                    if (Choice == "y") { continue; } else { break; }
+                    if (Choice == "n") { break; }
                 }
             }
         }
